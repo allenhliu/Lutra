@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    include:
+    - master
+stages:
+- stage:
+  - job:
+      steps:
+      - taskType: DockerBuildAndPushImage@latest
+        inputs:
+          targetImageName: lutra/lutra
+          targetImageTag: latest
+          dockerFilePath: ./Dockerfile
+          targetRepoItem:
+            url: csighub.tencentyun.com
+            username: $env:stke_username
+            password: $env:stke_password

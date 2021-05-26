@@ -1,0 +1,11 @@
+.git
+venv
+*.pyc
+__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__
+*/*/*/*/__pycache__
+*/*/*/*/*/__pycache__
+lutra.tar
+lutra-devops.tar

@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.pytest_cache/
+__pycache__/
+venv/
+geckodriver.log
+ghostdriver.log
+test/
+.docker_temp_*
+lutra-devops.tar
